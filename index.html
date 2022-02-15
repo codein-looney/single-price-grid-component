@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="stylesheet" href="css/styles.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -15,30 +16,35 @@
   </style>
 </head>
 <body>
-    Join our community
-
-    30-day, hassle-free money back guarantee
-
-    Gain access to our full library of tutorials along with expert code reviews. 
-    Perfect for any developers who are serious about honing their skills.
-
-    Monthly Subscription
-
-    &dollar;29 per month
-
-    Full access for less than &dollar;1 a day
-
-    Sign Up
-
-    Why Us
-
-    Tutorials by industry experts
-    Peer &amp; expert code review
-    Coding exercises
-    Access to our GitHub repos
-    Community forum
-    Flashcard decks
-    New videos every week
+    <main class="wrapper">
+        <div class="content">
+          <div class="flex-box">
+            <h1 class="flex-title">Join our community</h1>
+            <h2 class="flex-sub-title">30-day, hassle-free money back guarantee</h2>
+            <p class="flex-text">Gain access to our full library of tutorials along with expert code reviews.
+              Perfect for any developers who are serious about honing their skills.</p>
+          </div>   
+          <div class="grid-box">
+            <div class="box1">
+              <h1 class="box-title">Monthly Subscription</h1>
+              <div class="box-price">&dollar;29 per month</div>
+              <div class="box-sub-title">Full access for less than &dollar;1 a day</div>
+              <button class="btn">Sign Up</button>
+            </div>
+            <div class="box2">
+              <h1 class="box-title">Why Us</h1>
+              <p class="box-text">
+                Tutorials by industry experts
+                Peer &amp; expert code review
+                Coding exercises
+                Access to our GitHub repos
+                Community forum
+                Flashcard decks
+                New videos every week</p>
+            </div>
+          </div>
+        </div>
+    </main>
   
   <footer>
     <p class="attribution">
