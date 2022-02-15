@@ -1,4 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--Light-Gray);
+  font-family: "Karla", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .content {
+  width: 50%;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.wrapper .content .flex-box {
+  padding: 2em;
+  background-color: white;
+}
+.wrapper .content .grid-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.wrapper .content .grid-box .box1 {
+  padding: 2em;
+  background-color: var(--Cyan);
+}
+.wrapper .content .grid-box .box2 {
+  padding: 2em;
+  background-color: #4abfbd;
+}
+
 :root {
   --Cyan: hsl(179, 62%, 43%);
   --Bright-Yellow: hsl(71, 73%, 54%);
