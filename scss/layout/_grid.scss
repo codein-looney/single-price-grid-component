@@ -4,6 +4,10 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: 900px) {
+        margin: 2.5em 0;
+    }
+
     .content {
         width: 45%;
         border-radius: .5em;
@@ -39,6 +43,12 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             color: var(--Light-Gray);
+
+            @media screen and (max-width: 900px) {
+                display: flex;
+                flex-direction: column;
+
+            }
 
             .box1 {
                  padding: 2em;

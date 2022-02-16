@@ -36,6 +36,11 @@ a .btn-primary:hover {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 900px) {
+  .wrapper {
+    margin: 2.5em 0;
+  }
+}
 .wrapper .content {
   width: 45%;
   border-radius: 0.5em;
@@ -67,6 +72,12 @@ a .btn-primary:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: var(--Light-Gray);
+}
+@media screen and (max-width: 900px) {
+  .wrapper .content .grid-box {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .wrapper .content .grid-box .box1 {
   padding: 2em;
