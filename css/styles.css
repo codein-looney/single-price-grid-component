@@ -9,6 +9,27 @@ body {
   font-family: "Karla", sans-serif;
 }
 
+a .btn-primary {
+  margin-bottom: 0.5em;
+  width: 100%;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: 400;
+  border-radius: 0.3em;
+  color: var(--Light-Gray);
+  background-color: var(--Bright-Yellow);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+a .btn-primary:hover {
+  opacity: 0.9;
+}
+
 .wrapper {
   height: 100vh;
   display: flex;
@@ -16,25 +37,75 @@ body {
   justify-content: center;
 }
 .wrapper .content {
-  width: 50%;
+  width: 45%;
   border-radius: 0.5em;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 .wrapper .content .flex-box {
   padding: 2em;
   background-color: white;
 }
+.wrapper .content .flex-box .flex-title {
+  margin-bottom: 0.8em;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--Cyan);
+}
+.wrapper .content .flex-box .flex-sub-title {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: var(--Bright-Yellow);
+}
+.wrapper .content .flex-box .flex-text {
+  line-height: 1.7em;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+}
 .wrapper .content .grid-box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  color: var(--Light-Gray);
 }
 .wrapper .content .grid-box .box1 {
   padding: 2em;
   background-color: var(--Cyan);
 }
+.wrapper .content .grid-box .box1 .box1-title {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.wrapper .content .grid-box .box1 .box1-price {
+  margin-bottom: 0.2em;
+  font-size: 2em;
+  font-weight: 700;
+}
+.wrapper .content .grid-box .box1 .box1-price span {
+  font-size: 0.5em;
+  font-weight: 400;
+  color: #78dfe2;
+}
+.wrapper .content .grid-box .box1 .box1-sub-title {
+  margin-bottom: 1.5em;
+}
 .wrapper .content .grid-box .box2 {
+  width: 100%;
   padding: 2em;
   background-color: #4abfbd;
+}
+.wrapper .content .grid-box .box2 .box2-title {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.wrapper .content .grid-box .box2 .box2-text {
+  max-width: 75%;
+  font-weight: 400;
+  color: #a8feff;
+  font-size: 0.9em;
+  line-height: 1.5;
 }
 
 :root {

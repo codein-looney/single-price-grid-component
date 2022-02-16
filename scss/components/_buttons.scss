@@ -1,0 +1,21 @@
+a .btn-primary {
+    margin-bottom: .5em;
+    width: 100%;
+    padding: 1em;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: .3em;
+    color: var(--Light-Gray);
+    background-color: var(--Bright-Yellow);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    &:hover {
+        opacity: .9;
+    }
+}
